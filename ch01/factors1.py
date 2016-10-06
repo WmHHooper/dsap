@@ -20,8 +20,8 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 def factors(n):             # traditional function that computes factors
-  results = []              # store factors in a new list
+  sofar = []              # store factors in a new list
   for k in range(1,n+1):
     if n % k == 0:          # divides evenly, thus k is a factor
-      results.append(k)     # add k to the list of factors
-  return results            # return the entire list
+      sofar.append(k)     # add k to the list of factors
+  return sofar            # return the entire list
